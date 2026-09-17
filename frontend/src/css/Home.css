@@ -1,0 +1,1122 @@
+/* ==========================================
+   HOME PAGE
+========================================== */
+
+.home-page {
+    width: 100%;
+    overflow-x: hidden;
+    background: #f6f8fc;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.home-hero-section {
+    position: relative;
+
+    min-height: calc(100vh - 76px);
+
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(37, 99, 235, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(124, 58, 237, 0.10),
+            transparent 30%
+        ),
+        #f6f8fc;
+}
+
+
+.home-hero-content {
+    max-width: 620px;
+}
+.home-hero-row {
+    min-height: calc(100vh - 76px);
+}
+
+
+.home-hero-badge {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    margin-bottom: 22px;
+
+    border-radius: 30px;
+
+    background: #e8f1ff;
+
+    color: #2563eb;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.home-hero-title {
+    font-size: clamp(48px, 6vw, 72px);
+
+    line-height: 1.05;
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    color: #172033;
+
+    margin-bottom: 24px;
+}
+
+
+.home-hero-title span {
+    display: block;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+}
+
+
+.home-hero-description {
+    max-width: 580px;
+
+    margin-bottom: 30px;
+
+    color: #657084;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   HERO BUTTONS
+========================================== */
+
+.home-hero-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-bottom: 34px;
+}
+
+
+.home-primary-button,
+.home-secondary-button {
+    min-height: 50px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 0 22px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.home-primary-button {
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 10px 24px
+        rgba(37, 99, 235, 0.23);
+}
+
+
+.home-primary-button:hover {
+    color: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px
+        rgba(37, 99, 235, 0.28);
+}
+
+
+.home-secondary-button {
+    border: 1px solid #d0d7e2;
+
+    color: #39465a;
+
+    background: rgba(255, 255, 255, 0.75);
+}
+
+
+.home-secondary-button:hover {
+    color: #2563eb;
+
+    background: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   TRUST ROW
+========================================== */
+
+.home-trust-row {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 32px;
+}
+
+
+.home-trust-row div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.home-trust-row strong {
+    color: #172033;
+
+    font-size: 18px;
+}
+
+
+.home-trust-row span {
+    margin-top: 2px;
+
+    color: #7b8494;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   HERO VISUAL
+========================================== */
+
+.home-hero-visual {
+    position: relative;
+
+    min-height: 520px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.home-main-visual-card {
+    position: relative;
+
+    z-index: 3;
+
+    width: 390px;
+
+    max-width: 90%;
+
+    padding: 38px;
+
+    border-radius: 28px;
+
+    background:
+        rgba(255, 255, 255, 0.88);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.95);
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 25px 65px
+        rgba(23, 32, 51, 0.14);
+
+    text-align: center;
+
+    animation:
+        homeFloat 5s
+        ease-in-out
+        infinite;
+}
+
+
+.home-visual-icon {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #ede9fe
+        );
+
+    font-size: 34px;
+}
+
+
+.home-main-visual-card h3 {
+    color: #172033;
+
+    font-size: 23px;
+
+    font-weight: 800;
+}
+
+
+.home-main-visual-card p {
+    margin-top: 10px;
+
+    color: #7a8493;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   SAMPLE CONVERSION
+========================================== */
+
+.home-sample-conversion {
+    margin-top: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px;
+
+    border-radius: 16px;
+
+    background: #f6f8fc;
+}
+
+
+.home-sample-conversion div:not(
+    .home-conversion-arrow
+) {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.home-sample-conversion span {
+    color: #8c95a3;
+
+    font-size: 12px;
+}
+
+
+.home-sample-conversion strong {
+    margin-top: 3px;
+
+    color: #172033;
+
+    font-size: 18px;
+}
+
+
+.home-conversion-arrow {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   HERO FLOATING CARDS
+========================================== */
+
+.home-floating-card {
+    position: absolute;
+
+    z-index: 4;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 12px 15px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(255, 255, 255, 0.92);
+
+    box-shadow:
+        0 12px 30px
+        rgba(23, 32, 51, 0.12);
+
+    backdrop-filter: blur(12px);
+}
+
+
+.home-floating-card span {
+    font-size: 23px;
+}
+
+
+.home-floating-card div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.home-floating-card strong {
+    color: #172033;
+
+    font-size: 14px;
+}
+
+
+.home-floating-card small {
+    color: #828c9b;
+
+    font-size: 11px;
+}
+
+
+.home-floating-one {
+    top: 15%;
+
+    left: 1%;
+}
+
+
+.home-floating-two {
+    bottom: 15%;
+
+    right: 0;
+}
+
+
+/* ==========================================
+   HERO GLOWS
+========================================== */
+
+.home-glow {
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(50px);
+}
+
+
+.home-glow-one {
+    width: 300px;
+
+    height: 300px;
+
+    background:
+        rgba(37, 99, 235, 0.13);
+
+    top: 12%;
+
+    left: 15%;
+}
+
+
+.home-glow-two {
+    width: 250px;
+
+    height: 250px;
+
+    background:
+        rgba(124, 58, 237, 0.12);
+
+    bottom: 10%;
+
+    right: 12%;
+}
+
+
+@keyframes homeFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* ==========================================
+   COMMON SECTION
+========================================== */
+
+.home-section {
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+
+.home-section-heading {
+    max-width: 680px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+
+.home-section-heading > span {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.home-section-heading h2 {
+    margin-bottom: 12px;
+
+    color: #172033;
+
+    font-size: 38px;
+
+    font-weight: 850;
+}
+
+
+.home-section-heading p {
+    margin: 0;
+
+    color: #758093;
+
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   FEATURE CARDS
+========================================== */
+
+.home-feature-card {
+    height: 100%;
+
+    padding: 32px;
+
+    border:
+        1px solid #e7ebf1;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 10px 28px
+        rgba(23, 32, 51, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.home-feature-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #d8e3f4;
+
+    box-shadow:
+        0 18px 42px
+        rgba(23, 32, 51, 0.12);
+}
+
+
+.home-feature-icon {
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 16px;
+
+    font-size: 27px;
+}
+
+
+.home-feature-blue {
+    background: #eaf2ff;
+}
+
+
+.home-feature-purple {
+    background: #f1eafe;
+}
+
+
+.home-feature-green {
+    background: #eaf9f1;
+}
+
+
+.home-feature-card h3 {
+    color: #172033;
+
+    font-size: 21px;
+
+    font-weight: 800;
+}
+
+
+.home-feature-card p {
+    margin-top: 10px;
+
+    color: #747e8e;
+
+    line-height: 1.7;
+}
+
+
+.home-feature-link {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   STATS
+========================================== */
+
+.home-stats-section {
+    padding: 55px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f6f8fc,
+            #eef3fb
+        );
+}
+
+
+.home-stat-card {
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+.home-stat-card strong {
+    display: block;
+
+    font-size: 34px;
+
+    font-weight: 850;
+}
+
+
+.home-stat-card span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #657084;
+}
+
+
+.home-stat-blue {
+    color: #2563eb;
+}
+
+
+.home-stat-green {
+    color: #16a34a;
+}
+
+
+.home-stat-red {
+    color: #ef4444;
+}
+
+
+.home-stat-orange {
+    color: #f59e0b;
+}
+
+
+/* ==========================================
+   HOW IT WORKS
+========================================== */
+
+.home-how-section {
+    padding: 90px 0;
+
+    background: #f7f9fc;
+}
+
+
+.home-steps {
+    display: grid;
+
+    grid-template-columns:
+        1fr auto
+        1fr auto
+        1fr auto
+        1fr;
+
+    align-items: center;
+}
+
+
+.home-step-card {
+    position: relative;
+
+    min-height: 270px;
+
+    padding: 30px 22px;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px
+        rgba(23, 32, 51, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.home-step-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 40px
+        rgba(23, 32, 51, 0.12);
+}
+
+
+.home-step-number {
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.home-step-icon {
+    width: 68px;
+
+    height: 68px;
+
+    margin: 10px auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e0ecff,
+            #ede9fe
+        );
+
+    font-size: 30px;
+}
+
+
+.home-step-card h3 {
+    color: #172033;
+
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+
+.home-step-card p {
+    margin-top: 10px;
+
+    color: #747e8e;
+
+    line-height: 1.6;
+}
+
+
+.home-step-line {
+    width: 45px;
+
+    height: 2px;
+
+    margin: 0 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #93c5fd,
+            #c4b5fd
+        );
+}
+
+
+/* ==========================================
+   CTA
+========================================== */
+
+.home-cta-section {
+    padding: 80px 0;
+
+    background: #ffffff;
+}
+
+
+.home-cta-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 50px;
+
+    border-radius: 26px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #4f46e5,
+            #7c3aed
+        );
+
+    box-shadow:
+        0 20px 50px
+        rgba(37, 99, 235, 0.22);
+}
+
+
+.home-cta-badge {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color:
+        rgba(255, 255, 255, 0.78);
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.home-cta-card h2 {
+    margin-bottom: 10px;
+
+    font-size: 34px;
+
+    font-weight: 850;
+}
+
+
+.home-cta-card p {
+    margin: 0;
+
+    color:
+        rgba(255, 255, 255, 0.82);
+}
+
+
+.home-cta-actions {
+    display: flex;
+
+    gap: 12px;
+
+    flex-shrink: 0;
+}
+
+
+.home-cta-primary,
+.home-cta-secondary {
+    padding: 13px 20px;
+
+    border-radius: 11px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.home-cta-primary {
+    background: #ffffff;
+
+    color: #2563eb;
+}
+
+
+.home-cta-secondary {
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.35);
+
+    color: #ffffff;
+}
+
+
+.home-cta-primary:hover,
+.home-cta-secondary:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 991px) {
+
+    .home-hero-section {
+        padding: 80px 0;
+    }
+
+    .home-hero-content {
+        text-align: center;
+
+        margin: 0 auto;
+    }
+
+    .home-hero-actions,
+    .home-trust-row {
+        justify-content: center;
+    }
+
+    .home-hero-visual {
+        min-height: 480px;
+
+        margin-top: 40px;
+    }
+
+    .home-steps {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .home-step-line {
+        display: none;
+    }
+
+    .home-cta-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .home-section,
+    .home-how-section {
+        padding: 70px 0;
+    }
+
+    .home-section-heading h2 {
+        font-size: 32px;
+    }
+
+    .home-hero-title {
+        font-size: 48px;
+    }
+
+    .home-floating-card {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .home-hero-section {
+        padding: 55px 0;
+    }
+
+    .home-hero-title {
+        font-size: 40px;
+    }
+
+    .home-hero-description {
+        font-size: 16px;
+    }
+
+    .home-hero-actions {
+        flex-direction: column;
+    }
+
+    .home-primary-button,
+    .home-secondary-button {
+        width: 100%;
+    }
+
+    .home-trust-row {
+        gap: 20px;
+    }
+
+    .home-main-visual-card {
+        padding: 28px 20px;
+    }
+
+    .home-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .home-cta-card {
+        padding: 35px 22px;
+    }
+
+    .home-cta-card h2 {
+        font-size: 27px;
+    }
+
+    .home-cta-actions {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .home-cta-primary,
+    .home-cta-secondary {
+        width: 100%;
+
+        text-align: center;
+    }
+}
