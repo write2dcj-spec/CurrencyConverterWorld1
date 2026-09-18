@@ -225,11 +225,12 @@ public class SecurityConfig {
         // FRONTEND ORIGIN
         // =========================================
 
-        configuration.setAllowedOrigins(
-                List.of(
-                        "http://localhost:5173"
-                )
-        );
+       configuration.setAllowedOrigins(
+        List.of(
+                "http://localhost:5173",
+                "https://currency-converter-world1.vercel.app"
+        )
+);
 
 
         // =========================================
