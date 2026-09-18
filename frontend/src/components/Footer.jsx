@@ -301,10 +301,12 @@ function Footer() {
 
                     <div className="footer-bottom-content">
 
-                        <p>
-                            © {currentYear} Currency Converter World.
-                            All rights reserved.
-                        </p>
+                       <p>
+                        © {currentYear} Currency Converter World.
+                         All rights reserved.
+                         {" "}
+                       Designed and Developed By Deepak Joshi.
+                         </p>
 
 
                         <div className="footer-bottom-links">
