@@ -1,6 +1,4 @@
-import {
-    Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "../css/Home.css";
 
@@ -27,10 +25,9 @@ function Home() {
                             HERO LEFT
                         ================================== */}
 
-                        <div className="col-lg-6">
+                        <div className="col-12 col-lg-6">
 
                             <div className="home-hero-content">
-
 
                                 <span className="home-hero-badge">
                                     🌍 Global Currency Platform
@@ -68,13 +65,11 @@ function Home() {
                                         to="/converter"
                                         className="home-primary-button"
                                     >
-
                                         Convert Currency
 
                                         <span>
                                             →
                                         </span>
-
                                     </Link>
 
 
@@ -82,16 +77,14 @@ function Home() {
                                         href="#features"
                                         className="home-secondary-button"
                                     >
-
                                         Explore Features
-
                                     </a>
 
                                 </div>
 
 
                                 {/* ==================================
-                                    TRUST / FEATURE ROW
+                                    TRUST ROW
                                 ================================== */}
 
                                 <div className="home-trust-row">
@@ -145,7 +138,7 @@ function Home() {
                             HERO RIGHT
                         ================================== */}
 
-                        <div className="col-lg-6">
+                        <div className="col-12 col-lg-6">
 
                             <div className="home-hero-visual">
 
@@ -163,7 +156,6 @@ function Home() {
                                 {/* MAIN CARD */}
 
                                 <div className="home-main-visual-card">
-
 
                                     <div className="home-visual-icon">
                                         💱
@@ -183,10 +175,6 @@ function Home() {
 
                                     </p>
 
-
-                                    {/* ==================================
-                                        SAMPLE / CONCEPT DISPLAY
-                                    ================================== */}
 
                                     <div className="home-sample-conversion">
 
@@ -225,9 +213,7 @@ function Home() {
                                 </div>
 
 
-                                {/* ==================================
-                                    FLOATING CARD 1
-                                ================================== */}
+                                {/* FLOATING CARD 1 */}
 
                                 <div className="home-floating-card home-floating-one">
 
@@ -250,9 +236,7 @@ function Home() {
                                 </div>
 
 
-                                {/* ==================================
-                                    FLOATING CARD 2
-                                ================================== */}
+                                {/* FLOATING CARD 2 */}
 
                                 <div className="home-floating-card home-floating-two">
 
@@ -296,7 +280,6 @@ function Home() {
 
                 <div className="container">
 
-
                     <div className="home-section-heading">
 
                         <span>
@@ -323,14 +306,11 @@ function Home() {
                     <div className="row g-4">
 
 
-                        {/* ==================================
-                            FEATURE 1
-                        ================================== */}
+                        {/* FEATURE 1 */}
 
-                        <div className="col-md-4">
+                        <div className="col-12 col-md-6 col-lg-4">
 
                             <div className="home-feature-card">
-
 
                                 <div className="home-feature-icon home-feature-blue">
                                     📈
@@ -360,14 +340,11 @@ function Home() {
                         </div>
 
 
-                        {/* ==================================
-                            FEATURE 2
-                        ================================== */}
+                        {/* FEATURE 2 */}
 
-                        <div className="col-md-4">
+                        <div className="col-12 col-md-6 col-lg-4">
 
                             <div className="home-feature-card">
-
 
                                 <div className="home-feature-icon home-feature-purple">
                                     🔐
@@ -397,14 +374,11 @@ function Home() {
                         </div>
 
 
-                        {/* ==================================
-                            FEATURE 3
-                        ================================== */}
+                        {/* FEATURE 3 */}
 
-                        <div className="col-md-4">
+                        <div className="col-12 col-md-6 col-lg-4">
 
                             <div className="home-feature-card">
-
 
                                 <div className="home-feature-icon home-feature-green">
                                     🌍
@@ -433,7 +407,6 @@ function Home() {
 
                         </div>
 
-
                     </div>
 
                 </div>
@@ -449,10 +422,8 @@ function Home() {
 
                 <div className="container">
 
-                    <div className="row g-4">
+                    <div className="row g-3 g-md-4">
 
-
-                        {/* BENEFIT 1 */}
 
                         <div className="col-6 col-lg-3">
 
@@ -471,8 +442,6 @@ function Home() {
                         </div>
 
 
-                        {/* BENEFIT 2 */}
-
                         <div className="col-6 col-lg-3">
 
                             <div className="home-stat-card">
@@ -489,8 +458,6 @@ function Home() {
 
                         </div>
 
-
-                        {/* BENEFIT 3 */}
 
                         <div className="col-6 col-lg-3">
 
@@ -509,8 +476,6 @@ function Home() {
                         </div>
 
 
-                        {/* BENEFIT 4 */}
-
                         <div className="col-6 col-lg-3">
 
                             <div className="home-stat-card">
@@ -527,7 +492,6 @@ function Home() {
 
                         </div>
 
-
                     </div>
 
                 </div>
@@ -542,7 +506,6 @@ function Home() {
             <section className="home-how-section">
 
                 <div className="container">
-
 
                     <div className="home-section-heading">
 
@@ -569,10 +532,6 @@ function Home() {
 
                     <div className="home-steps">
 
-
-                        {/* ==================================
-                            STEP 1
-                        ================================== */}
 
                         <div className="home-step-card">
 
@@ -605,10 +564,6 @@ function Home() {
                         <div className="home-step-line" />
 
 
-                        {/* ==================================
-                            STEP 2
-                        ================================== */}
-
                         <div className="home-step-card">
 
                             <div className="home-step-number">
@@ -639,10 +594,6 @@ function Home() {
 
                         <div className="home-step-line" />
 
-
-                        {/* ==================================
-                            STEP 3
-                        ================================== */}
 
                         <div className="home-step-card">
 
@@ -675,10 +626,6 @@ function Home() {
                         <div className="home-step-line" />
 
 
-                        {/* ==================================
-                            STEP 4
-                        ================================== */}
-
                         <div className="home-step-card">
 
                             <div className="home-step-number">
@@ -706,7 +653,6 @@ function Home() {
 
                         </div>
 
-
                     </div>
 
                 </div>
@@ -723,7 +669,6 @@ function Home() {
                 <div className="container">
 
                     <div className="home-cta-card">
-
 
                         <div>
 
@@ -750,7 +695,6 @@ function Home() {
 
                         <div className="home-cta-actions">
 
-
                             <Link
                                 to="/converter"
                                 className="home-cta-primary"
@@ -766,7 +710,6 @@ function Home() {
                                 Create Account
                             </Link>
 
-
                         </div>
 
                     </div>
@@ -777,6 +720,7 @@ function Home() {
 
 
         </div>
+
     );
 }
 
