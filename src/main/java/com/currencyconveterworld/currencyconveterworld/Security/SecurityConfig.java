@@ -227,7 +227,7 @@ public class SecurityConfig {
 
        configuration.setAllowedOrigins(
         List.of(
-                "http://localhost:5173",
+                
                 "https://currency-converter-world1.vercel.app"
         )
 );
