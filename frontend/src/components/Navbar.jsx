@@ -1,16 +1,30 @@
 import {
     NavLink,
     Link,
-    useNavigate
+    useNavigate,
+    useLocation
 } from "react-router-dom";
+
+import { useEffect, useState } from "react";
 
 
 function Navbar() {
 
     const navigate = useNavigate();
+    const location = useLocation();
 
-    const token =
-        localStorage.getItem("token");
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const token = localStorage.getItem("token");
+
+
+    // ==========================================
+    // Close Mobile Menu After Route Change
+    // ==========================================
+
+    useEffect(() => {
+        setMenuOpen(false);
+    }, [location.pathname]);
 
 
     // ==========================================
@@ -21,6 +35,8 @@ function Navbar() {
 
         localStorage.removeItem("token");
 
+        setMenuOpen(false);
+
         navigate(
             "/login",
             {
@@ -30,6 +46,15 @@ function Navbar() {
                 }
             }
         );
+    };
+
+
+    // ==========================================
+    // Mobile Menu Toggle
+    // ==========================================
+
+    const handleMenuToggle = () => {
+        setMenuOpen((previous) => !previous);
     };
 
 
@@ -55,22 +80,28 @@ function Navbar() {
                 <Link
                     className="navbar-brand"
                     to="/"
+                    onClick={() => setMenuOpen(false)}
                 >
-                    🌍 Currency Converter World
+                    <span className="navbar-brand-icon">
+                        🌍
+                    </span>
+
+                    <span className="navbar-brand-text">
+                        Currency Converter World
+                    </span>
                 </Link>
 
 
                 {/* ==========================================
-                    Mobile Toggle
+                    Mobile / Tablet Toggle
                 ========================================== */}
 
                 <button
                     className="navbar-toggler"
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mainNavbar"
+                    onClick={handleMenuToggle}
                     aria-controls="mainNavbar"
-                    aria-expanded="false"
+                    aria-expanded={menuOpen}
                     aria-label="Toggle navigation"
                 >
                     <span className="navbar-toggler-icon" />
@@ -82,7 +113,9 @@ function Navbar() {
                 ========================================== */}
 
                 <div
-                    className="collapse navbar-collapse"
+                    className={`navbar-collapse ${
+                        menuOpen ? "mobile-menu-open" : ""
+                    }`}
                     id="mainNavbar"
                 >
 
