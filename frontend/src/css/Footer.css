@@ -5,7 +5,7 @@
 .site-footer {
     margin-top: auto;
 
-    background: #0f172a;
+    background: #050914;
 
     color: #cbd5e1;
 }
@@ -18,9 +18,11 @@
 .site-footer-main {
     padding: 65px 0 45px;
 
+    background: #050914;
+
     border-bottom:
         1px solid
-        rgba(255, 255, 255, 0.08);
+        rgba(255, 255, 255, 0.07);
 }
 
 
@@ -97,12 +99,11 @@
 
     border:
         1px solid
-        rgba(255, 255, 255, 0.10);
+        rgba(255, 255, 255, 0.11);
 
     border-radius: 10px;
 
-    background:
-        rgba(255, 255, 255, 0.05);
+    background: #0b1220;
 
     color: #cbd5e1;
 
@@ -123,7 +124,7 @@
     transform: translateY(-3px);
 
     border-color:
-        rgba(96, 165, 250, 0.40);
+        rgba(96, 165, 250, 0.45);
 
     background: #2563eb;
 
@@ -181,7 +182,7 @@
 .footer-disclaimer {
     padding: 25px 0;
 
-    background: #111c31;
+    background: #070d19;
 }
 
 
@@ -195,12 +196,11 @@
 
     border:
         1px solid
-        rgba(148, 163, 184, 0.13);
+        rgba(148, 163, 184, 0.12);
 
     border-radius: 14px;
 
-    background:
-        rgba(255, 255, 255, 0.025);
+    background: #0b1220;
 }
 
 
@@ -217,7 +217,7 @@
     border-radius: 50%;
 
     background:
-        rgba(59, 130, 246, 0.15);
+        rgba(59, 130, 246, 0.16);
 
     color: #60a5fa;
 
@@ -242,7 +242,7 @@
 
     margin: 0;
 
-    color: #8492a6;
+    color: #8b9bb0;
 
     font-size: 11px;
     line-height: 1.7;
@@ -264,14 +264,14 @@
         1px solid
         rgba(255, 255, 255, 0.06);
 
-    background: #0d1628;
+    background: #050a13;
 }
 
 
 .footer-data-notice p {
     margin: 0;
 
-    color: #748298;
+    color: #7f8da3;
 
     text-align: center;
 
@@ -281,7 +281,7 @@
 
 
 .footer-data-notice strong {
-    color: #94a3b8;
+    color: #a8b3c4;
 }
 
 
@@ -292,7 +292,7 @@
 .footer-bottom {
     padding: 20px 0;
 
-    background: #0b1323;
+    background: #030711;
 }
 
 
@@ -308,9 +308,16 @@
 .footer-bottom-content p {
     margin: 0;
 
-    color: #718096;
+    color: #7f8da3;
 
     font-size: 11px;
+}
+
+
+.footer-bottom-content p strong {
+    color: #cbd5e1;
+
+    font-weight: 700;
 }
 
 
@@ -323,7 +330,7 @@
 
 
 .footer-bottom-links a {
-    color: #718096;
+    color: #7f8da3;
 
     text-decoration: none;
 
