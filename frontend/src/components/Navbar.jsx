@@ -5,7 +5,10 @@ import {
     useLocation
 } from "react-router-dom";
 
-import { useEffect, useState } from "react";
+import {
+    useEffect,
+    useState
+} from "react";
 
 
 function Navbar() {
@@ -15,11 +18,12 @@ function Navbar() {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const token = localStorage.getItem("token");
+    const token =
+        localStorage.getItem("token");
 
 
     // ==========================================
-    // Close Mobile Menu After Route Change
+    // Close Menu When Page Changes
     // ==========================================
 
     useEffect(() => {
