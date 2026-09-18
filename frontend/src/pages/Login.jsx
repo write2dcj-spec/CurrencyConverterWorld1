@@ -367,10 +367,9 @@ function Login() {
     // ==========================================
 
     const handleGoogleLogin = () => {
-
-        window.location.href =
-            "http://localhost:8080/oauth2/authorization/google";
-    };
+    window.location.href =
+        "https://currencyconverterworld1.onrender.com/oauth2/authorization/google";
+};
 
 
     return (
