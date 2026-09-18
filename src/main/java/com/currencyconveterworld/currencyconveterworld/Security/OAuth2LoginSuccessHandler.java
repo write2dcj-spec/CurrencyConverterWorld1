@@ -105,9 +105,9 @@ public class OAuth2LoginSuccessHandler
         System.out.println("Redirecting to React...");
 
         response.sendRedirect(
-                "http://localhost:5173/oauth-success?token="
-                        + token
-        );
+        "https://currency-converter-world1.vercel.app/oauth-success?token="
+                + token
+);
 
         System.out.println("Redirect completed.");
     }
