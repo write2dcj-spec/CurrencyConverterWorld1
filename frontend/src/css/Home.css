@@ -4,7 +4,9 @@
 
 .home-page {
     width: 100%;
+
     overflow-x: hidden;
+
     background: #f6f8fc;
 }
 
@@ -36,13 +38,19 @@
 }
 
 
-.home-hero-content {
-    max-width: 620px;
-}
 .home-hero-row {
     min-height: calc(100vh - 76px);
 }
 
+
+.home-hero-content {
+    max-width: 620px;
+}
+
+
+/* ==========================================
+   HERO BADGE
+========================================== */
 
 .home-hero-badge {
     display: inline-block;
@@ -62,18 +70,21 @@
 }
 
 
+/* ==========================================
+   HERO TITLE
+========================================== */
+
 .home-hero-title {
-    font-size: clamp(48px, 6vw, 72px);
-
-    line-height: 1.05;
-
-    font-weight: 900;
-
-    letter-spacing: -2px;
+    margin-bottom: 24px;
 
     color: #172033;
 
-    margin-bottom: 24px;
+    font-size: clamp(48px, 6vw, 72px);
+    font-weight: 900;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
 }
 
 
@@ -127,9 +138,7 @@
     min-height: 50px;
 
     display: inline-flex;
-
     align-items: center;
-
     justify-content: center;
 
     gap: 10px;
@@ -181,7 +190,8 @@
 
     color: #39465a;
 
-    background: rgba(255, 255, 255, 0.75);
+    background:
+        rgba(255, 255, 255, 0.75);
 }
 
 
@@ -240,9 +250,7 @@
     min-height: 520px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 }
 
@@ -253,19 +261,18 @@
     z-index: 3;
 
     width: 390px;
-
     max-width: 90%;
 
     padding: 38px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.95);
 
     border-radius: 28px;
 
     background:
         rgba(255, 255, 255, 0.88);
-
-    border:
-        1px solid
-        rgba(255, 255, 255, 0.95);
 
     backdrop-filter: blur(18px);
 
@@ -289,9 +296,7 @@
     margin: 0 auto 20px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     border-radius: 20px;
@@ -308,16 +313,18 @@
 
 
 .home-main-visual-card h3 {
+    margin: 0;
+
     color: #172033;
 
     font-size: 23px;
-
     font-weight: 800;
 }
 
 
 .home-main-visual-card p {
     margin-top: 10px;
+    margin-bottom: 0;
 
     color: #7a8493;
 
@@ -333,9 +340,7 @@
     margin-top: 28px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     padding: 18px;
@@ -376,9 +381,7 @@
     height: 38px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     border-radius: 50%;
@@ -399,7 +402,6 @@
     z-index: 4;
 
     display: flex;
-
     align-items: center;
 
     gap: 11px;
@@ -447,15 +449,13 @@
 
 .home-floating-one {
     top: 15%;
-
     left: 1%;
 }
 
 
 .home-floating-two {
-    bottom: 15%;
-
     right: 0;
+    bottom: 15%;
 }
 
 
@@ -469,34 +469,32 @@
     border-radius: 50%;
 
     filter: blur(50px);
+
+    pointer-events: none;
 }
 
 
 .home-glow-one {
     width: 300px;
-
     height: 300px;
+
+    top: 12%;
+    left: 15%;
 
     background:
         rgba(37, 99, 235, 0.13);
-
-    top: 12%;
-
-    left: 15%;
 }
 
 
 .home-glow-two {
     width: 250px;
-
     height: 250px;
+
+    right: 12%;
+    bottom: 10%;
 
     background:
         rgba(124, 58, 237, 0.12);
-
-    bottom: 10%;
-
-    right: 12%;
 }
 
 
@@ -510,6 +508,7 @@
     50% {
         transform: translateY(-10px);
     }
+
 }
 
 
@@ -541,7 +540,6 @@
     color: #2563eb;
 
     font-size: 14px;
-
     font-weight: 700;
 
     text-transform: uppercase;
@@ -556,7 +554,6 @@
     color: #172033;
 
     font-size: 38px;
-
     font-weight: 850;
 }
 
@@ -567,6 +564,8 @@
     color: #758093;
 
     font-size: 16px;
+
+    line-height: 1.7;
 }
 
 
@@ -579,8 +578,7 @@
 
     padding: 32px;
 
-    border:
-        1px solid #e7ebf1;
+    border: 1px solid #e7ebf1;
 
     border-radius: 20px;
 
@@ -610,13 +608,10 @@
 
 .home-feature-icon {
     width: 58px;
-
     height: 58px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     margin-bottom: 22px;
@@ -646,7 +641,6 @@
     color: #172033;
 
     font-size: 21px;
-
     font-weight: 800;
 }
 
@@ -668,7 +662,6 @@
     color: #2563eb;
 
     font-size: 13px;
-
     font-weight: 700;
 }
 
@@ -700,7 +693,6 @@
     display: block;
 
     font-size: 34px;
-
     font-weight: 850;
 }
 
@@ -794,17 +786,13 @@
     position: absolute;
 
     top: 15px;
-
     right: 15px;
 
     width: 30px;
-
     height: 30px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     border-radius: 50%;
@@ -814,22 +802,18 @@
     color: #ffffff;
 
     font-size: 13px;
-
     font-weight: 700;
 }
 
 
 .home-step-icon {
     width: 68px;
-
     height: 68px;
 
     margin: 10px auto 20px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     border-radius: 18px;
@@ -849,13 +833,13 @@
     color: #172033;
 
     font-size: 19px;
-
     font-weight: 800;
 }
 
 
 .home-step-card p {
     margin-top: 10px;
+    margin-bottom: 0;
 
     color: #747e8e;
 
@@ -865,7 +849,6 @@
 
 .home-step-line {
     width: 45px;
-
     height: 2px;
 
     margin: 0 10px;
@@ -894,7 +877,6 @@
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     gap: 40px;
@@ -928,7 +910,6 @@
         rgba(255, 255, 255, 0.78);
 
     font-size: 14px;
-
     font-weight: 700;
 }
 
@@ -937,7 +918,6 @@
     margin-bottom: 10px;
 
     font-size: 34px;
-
     font-weight: 850;
 }
 
@@ -947,6 +927,8 @@
 
     color:
         rgba(255, 255, 255, 0.82);
+
+    line-height: 1.7;
 }
 
 
@@ -998,114 +980,526 @@
 
 
 /* ==========================================
-   RESPONSIVE
+   TABLET
+   768px - 991px
 ========================================== */
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
+
+    /*
+       Important:
+       Remove desktop viewport height behaviour
+       when hero columns stack.
+    */
 
     .home-hero-section {
-        padding: 80px 0;
+        min-height: auto;
+
+        padding: 65px 0 70px;
+
+        display: block;
     }
+
+
+    .home-hero-row {
+        min-height: auto;
+    }
+
 
     .home-hero-content {
-        text-align: center;
-
         margin: 0 auto;
+
+        text-align: center;
     }
+
+
+    .home-hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
     .home-hero-actions,
     .home-trust-row {
         justify-content: center;
     }
 
-    .home-hero-visual {
-        min-height: 480px;
 
-        margin-top: 40px;
+    .home-hero-visual {
+        min-height: 400px;
+
+        margin-top: 35px;
     }
+
+
+    .home-main-visual-card {
+        width: 390px;
+    }
+
+
+    .home-floating-one {
+        left: 8%;
+    }
+
+
+    .home-floating-two {
+        right: 8%;
+    }
+
 
     .home-steps {
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(2, minmax(0, 1fr));
 
         gap: 20px;
     }
 
+
     .home-step-line {
         display: none;
     }
+
+
+    .home-step-card {
+        min-height: 250px;
+    }
+
 
     .home-cta-card {
         flex-direction: column;
 
         text-align: center;
     }
+
 }
 
 
-@media (max-width: 767px) {
+/* ==========================================
+   MOBILE
+   <= 767px
+========================================== */
 
-    .home-section,
-    .home-how-section {
-        padding: 70px 0;
-    }
-
-    .home-section-heading h2 {
-        font-size: 32px;
-    }
-
-    .home-hero-title {
-        font-size: 48px;
-    }
-
-    .home-floating-card {
-        display: none;
-    }
-}
-
-
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
 
     .home-hero-section {
-        padding: 55px 0;
+        padding: 48px 0 55px;
     }
 
+
     .home-hero-title {
-        font-size: 40px;
+        font-size: 42px;
+
+        line-height: 1.08;
+
+        letter-spacing: -1.5px;
     }
+
 
     .home-hero-description {
         font-size: 16px;
     }
 
+
+    .home-hero-visual {
+        min-height: 360px;
+
+        margin-top: 28px;
+    }
+
+
+    .home-main-visual-card {
+        width: 100%;
+        max-width: 440px;
+
+        padding: 30px 24px;
+    }
+
+
+    .home-floating-card {
+        display: none;
+    }
+
+
+    .home-section,
+    .home-how-section {
+        padding: 60px 0;
+    }
+
+
+    .home-section-heading {
+        margin-bottom: 34px;
+    }
+
+
+    .home-section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .home-feature-card {
+        padding: 28px;
+    }
+
+
+    .home-stats-section {
+        padding: 42px 0;
+    }
+
+
+    .home-stat-card {
+        padding: 16px 8px;
+    }
+
+
+    .home-stat-card strong {
+        font-size: 28px;
+    }
+
+
+    .home-stat-card span {
+        font-size: 13px;
+    }
+
+
+    /*
+       One How-It-Works card per row on phones.
+    */
+
+    .home-steps {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .home-step-card {
+        min-height: auto;
+
+        padding: 28px 22px;
+    }
+
+
+    .home-cta-section {
+        padding: 60px 0;
+    }
+
+
+    .home-cta-card {
+        gap: 25px;
+
+        padding: 38px 28px;
+    }
+
+
+    .home-cta-card h2 {
+        font-size: 29px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+   <= 576px
+========================================== */
+
+@media (max-width: 576px) {
+
+    .home-hero-section {
+        padding: 38px 0 45px;
+    }
+
+
+    .home-hero-badge {
+        padding: 7px 12px;
+
+        margin-bottom: 18px;
+
+        font-size: 12px;
+    }
+
+
+    .home-hero-title {
+        margin-bottom: 18px;
+
+        font-size: 36px;
+
+        line-height: 1.08;
+
+        letter-spacing: -1px;
+    }
+
+
+    .home-hero-description {
+        margin-bottom: 24px;
+
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
+
+
     .home-hero-actions {
         flex-direction: column;
+
+        gap: 10px;
+
+        margin-bottom: 27px;
     }
+
 
     .home-primary-button,
     .home-secondary-button {
         width: 100%;
+
+        min-height: 48px;
     }
+
 
     .home-trust-row {
-        gap: 20px;
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        width: 100%;
+
+        gap: 8px;
     }
+
+
+    .home-trust-row div {
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .home-trust-row strong {
+        font-size: 15px;
+    }
+
+
+    .home-trust-row span {
+        font-size: 10px;
+
+        line-height: 1.35;
+    }
+
+
+    /*
+       Do not leave a large empty visual area
+       on small phones.
+    */
+
+    .home-hero-visual {
+        min-height: auto;
+
+        margin-top: 32px;
+
+        padding: 10px 0;
+    }
+
 
     .home-main-visual-card {
-        padding: 28px 20px;
+        width: 100%;
+        max-width: 100%;
+
+        padding: 25px 18px;
+
+        border-radius: 22px;
+
+        animation: none;
     }
 
-    .home-steps {
-        grid-template-columns: 1fr;
+
+    .home-visual-icon {
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 16px;
+
+        border-radius: 17px;
+
+        font-size: 29px;
     }
+
+
+    .home-main-visual-card h3 {
+        font-size: 20px;
+    }
+
+
+    .home-main-visual-card p {
+        font-size: 14px;
+    }
+
+
+    .home-sample-conversion {
+        margin-top: 20px;
+
+        padding: 14px;
+    }
+
+
+    .home-sample-conversion span {
+        font-size: 10px;
+    }
+
+
+    .home-sample-conversion strong {
+        font-size: 16px;
+    }
+
+
+    .home-conversion-arrow {
+        width: 34px;
+        height: 34px;
+
+        font-size: 14px;
+    }
+
+
+    .home-glow-one,
+    .home-glow-two {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .home-section,
+    .home-how-section {
+        padding: 52px 0;
+    }
+
+
+    .home-section-heading {
+        margin-bottom: 30px;
+
+        padding: 0 4px;
+    }
+
+
+    .home-section-heading > span {
+        margin-bottom: 8px;
+
+        font-size: 12px;
+    }
+
+
+    .home-section-heading h2 {
+        font-size: 28px;
+    }
+
+
+    .home-section-heading p {
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    .home-feature-card {
+        padding: 24px;
+
+        border-radius: 17px;
+    }
+
+
+    .home-feature-icon {
+        width: 52px;
+        height: 52px;
+
+        margin-bottom: 18px;
+
+        font-size: 24px;
+    }
+
+
+    .home-feature-card h3 {
+        font-size: 19px;
+    }
+
+
+    .home-feature-card p {
+        font-size: 14px;
+    }
+
+
+    .home-stats-section {
+        padding: 35px 0;
+    }
+
+
+    .home-stat-card {
+        padding: 13px 5px;
+    }
+
+
+    .home-stat-card strong {
+        font-size: 24px;
+    }
+
+
+    .home-stat-card span {
+        font-size: 11px;
+    }
+
+
+    .home-step-card {
+        padding: 26px 20px;
+
+        border-radius: 17px;
+    }
+
+
+    .home-step-icon {
+        width: 58px;
+        height: 58px;
+
+        margin-bottom: 16px;
+
+        font-size: 26px;
+    }
+
+
+    .home-step-card h3 {
+        font-size: 18px;
+    }
+
+
+    .home-step-card p {
+        font-size: 14px;
+    }
+
+
+    .home-cta-section {
+        padding: 50px 0;
+    }
+
 
     .home-cta-card {
-        padding: 35px 22px;
+        gap: 22px;
+
+        padding: 32px 20px;
+
+        border-radius: 21px;
     }
 
+
     .home-cta-card h2 {
-        font-size: 27px;
+        font-size: 26px;
+
+        line-height: 1.2;
     }
+
+
+    .home-cta-card p {
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
 
     .home-cta-actions {
         width: 100%;
@@ -1113,10 +1507,85 @@
         flex-direction: column;
     }
 
+
     .home-cta-primary,
     .home-cta-secondary {
         width: 100%;
 
         text-align: center;
     }
+
+}
+
+
+/* ==========================================
+   VERY SMALL MOBILE
+   <= 380px
+========================================== */
+
+@media (max-width: 380px) {
+
+    .home-hero-title {
+        font-size: 32px;
+    }
+
+
+    .home-hero-description {
+        font-size: 14px;
+    }
+
+
+    .home-trust-row strong {
+        font-size: 14px;
+    }
+
+
+    .home-trust-row span {
+        font-size: 9px;
+    }
+
+
+    .home-main-visual-card {
+        padding:
+            22px 15px;
+    }
+
+
+    .home-sample-conversion {
+        padding: 12px;
+    }
+
+
+    .home-section-heading h2 {
+        font-size: 26px;
+    }
+
+
+    .home-cta-card h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .home-main-visual-card {
+        animation: none;
+    }
+
+
+    .home-primary-button,
+    .home-secondary-button,
+    .home-feature-card,
+    .home-step-card,
+    .home-cta-primary,
+    .home-cta-secondary {
+        transition: none;
+    }
+
 }
