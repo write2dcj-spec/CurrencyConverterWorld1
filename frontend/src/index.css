@@ -43,9 +43,14 @@ body {
 ========================================== */
 
 .custom-navbar {
-    background: #151c26;
+    position: relative;
+    z-index: 1000;
 
-    padding: 14px 0;
+    min-height: 70px;
+
+    padding: 12px 0;
+
+    background: #151c26;
 
     box-shadow:
         0 3px 14px
@@ -53,29 +58,63 @@ body {
 }
 
 
+/* ==========================================
+   NAVBAR BRAND
+========================================== */
+
 .navbar-brand {
-    font-size: 26px;
-    font-weight: 800;
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
 
     color: #ffffff !important;
+
+    font-size: 24px;
+    font-weight: 800;
 
     letter-spacing: -0.5px;
 
     text-decoration: none;
+
+    white-space: nowrap;
+}
+
+
+.navbar-brand-icon {
+    flex-shrink: 0;
+
+    font-size: 25px;
+}
+
+
+.navbar-brand-text {
+    display: block;
+}
+
+
+/* ==========================================
+   NAVBAR LINKS
+========================================== */
+
+.custom-navbar .navbar-nav {
+    gap: 3px;
 }
 
 
 .custom-navbar .nav-link {
     color:
-        rgba(255, 255, 255, 0.72);
+        rgba(255, 255, 255, 0.72) !important;
 
     font-weight: 500;
 
-    margin-left: 6px;
+    margin-left: 4px;
 
-    padding: 9px 13px !important;
+    padding: 9px 12px !important;
 
     border-radius: 9px;
+
+    text-decoration: none;
 
     transition:
         color 0.25s ease,
@@ -84,7 +123,7 @@ body {
 
 
 .custom-navbar .nav-link:hover {
-    color: #ffffff;
+    color: #ffffff !important;
 
     background:
         rgba(255, 255, 255, 0.09);
@@ -92,20 +131,236 @@ body {
 
 
 .custom-navbar .nav-link.active-link {
-    color: #ffffff;
+    color: #ffffff !important;
 
     background:
         rgba(13, 110, 253, 0.85);
 }
 
 
+/* ==========================================
+   LOGOUT
+========================================== */
+
 .logout-link {
     border: none;
 
     background: transparent;
+
+    cursor: pointer;
 }
 
 
+/* ==========================================
+   HAMBURGER
+========================================== */
+
+.custom-navbar .navbar-toggler {
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.35);
+
+    padding: 6px 9px;
+
+    box-shadow: none !important;
+}
+
+
+.custom-navbar .navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+
+/* ==========================================
+   DESKTOP
+========================================== */
+
+@media (min-width: 992px) {
+
+    .custom-navbar .navbar-collapse {
+        display: flex !important;
+    }
+
+}
+
+
+/* ==========================================
+   TABLET + MOBILE NAVBAR
+========================================== */
+
+@media (max-width: 991.98px) {
+
+    .custom-navbar {
+        padding: 10px 0;
+    }
+
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+
+    /*
+       Menu hidden by default.
+       React adds mobile-menu-open
+       when hamburger is clicked.
+    */
+
+    .custom-navbar .navbar-collapse {
+        display: none !important;
+
+        width: 100%;
+    }
+
+
+    .custom-navbar
+    .navbar-collapse.mobile-menu-open {
+
+        display: block !important;
+    }
+
+
+    .custom-navbar .navbar-nav {
+        width: 100%;
+
+        margin-top: 13px;
+
+        padding-top: 10px;
+        padding-bottom: 8px;
+
+        border-top:
+            1px solid
+            rgba(255, 255, 255, 0.12);
+
+        gap: 3px;
+    }
+
+
+    .custom-navbar .nav-link {
+        display: block;
+
+        width: 100%;
+
+        margin: 2px 0;
+
+        padding: 11px 12px !important;
+
+        font-size: 15px;
+
+        text-align: left;
+    }
+
+
+    .custom-navbar .logout-link {
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE NAVBAR
+========================================== */
+
+@media (max-width: 767px) {
+
+    .custom-navbar {
+        min-height: 64px;
+    }
+
+
+    .navbar-brand {
+        max-width:
+            calc(100% - 65px);
+
+        gap: 6px;
+
+        font-size: 18px;
+    }
+
+
+    .navbar-brand-icon {
+        font-size: 21px;
+    }
+
+
+    .navbar-brand-text {
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+    }
+
+
+    .custom-navbar .nav-link {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE NAVBAR
+========================================== */
+
+@media (max-width: 576px) {
+
+    .custom-navbar {
+        padding: 9px 0;
+    }
+
+
+    .navbar-brand {
+        max-width:
+            calc(100% - 58px);
+
+        font-size: 15px;
+
+        letter-spacing: -0.2px;
+    }
+
+
+    .navbar-brand-icon {
+        font-size: 19px;
+    }
+
+
+    .custom-navbar .navbar-toggler {
+        padding: 5px 7px;
+    }
+
+
+    .custom-navbar .navbar-nav {
+        margin-top: 10px;
+    }
+
+
+    .custom-navbar .nav-link {
+        padding: 10px !important;
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==========================================
+   VERY SMALL MOBILE NAVBAR
+========================================== */
+
+@media (max-width: 380px) {
+
+    .navbar-brand {
+        font-size: 13px;
+    }
+
+
+    .navbar-brand-icon {
+        font-size: 17px;
+    }
+
+}
 /* ==========================================
    GENERIC PAGE LAYOUT
 ========================================== */
