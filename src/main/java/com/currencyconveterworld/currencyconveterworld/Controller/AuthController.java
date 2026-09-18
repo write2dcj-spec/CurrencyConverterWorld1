@@ -18,7 +18,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://currency-converter-world1.vercel.app"
+})
 @RequiredArgsConstructor
 public class AuthController {
 
