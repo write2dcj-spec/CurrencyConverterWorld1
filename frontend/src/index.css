@@ -172,7 +172,7 @@ body {
 
 
 /* ==========================================
-   DESKTOP
+   DESKTOP NAVBAR
 ========================================== */
 
 @media (min-width: 992px) {
@@ -361,6 +361,8 @@ body {
     }
 
 }
+
+
 /* ==========================================
    GENERIC PAGE LAYOUT
 ========================================== */
@@ -705,10 +707,6 @@ body {
 .auth-mobile-logo {
     display: none;
 }
-
-
-
-
 
 
 /* ==========================================
@@ -1078,21 +1076,10 @@ body {
 
 
 /* ==========================================
-   TABLET / NAVBAR RESPONSIVE
+   TABLET / PAGE + LOGIN RESPONSIVE
 ========================================== */
 
 @media (max-width: 991px) {
-
-    .navbar-brand {
-        font-size: 22px;
-    }
-
-
-    .custom-navbar .nav-link {
-        margin-top: 4px;
-        margin-left: 0;
-    }
-
 
     .page-container {
         padding-top: 30px;
@@ -1141,23 +1128,20 @@ body {
 
         font-size: 30px;
     }
+
 }
 
 
 /* ==========================================
-   MOBILE
+   MOBILE PAGE RESPONSIVE
 ========================================== */
 
 @media (max-width: 767px) {
 
-    .navbar-brand {
-        font-size: 20px;
-    }
-
-
     .page-title {
         font-size: 25px;
     }
+
 }
 
 
@@ -1189,9 +1173,8 @@ body {
     .auth-heading h2 {
         font-size: 26px;
     }
+
 }
-
-
 
 
 /* =========================================================
@@ -1200,24 +1183,36 @@ body {
 
 .auth-login-tabs {
     display: flex;
+
     width: 100%;
+
     padding: 4px;
+
     margin: 26px 0 20px;
+
     background: #f3f6fb;
+
     border: 1px solid #e2e8f0;
     border-radius: 12px;
+
     gap: 4px;
 }
 
+
 .auth-login-tab {
     flex: 1;
+
     border: none;
+
     background: transparent;
+
     padding: 10px 14px;
+
     border-radius: 9px;
 
     font-size: 14px;
     font-weight: 600;
+
     color: #64748b;
 
     cursor: pointer;
@@ -1228,16 +1223,20 @@ body {
         box-shadow 0.2s ease;
 }
 
+
 .auth-login-tab:hover {
     color: #2563eb;
 }
 
+
 .auth-login-tab.active {
     background: #ffffff;
+
     color: #2563eb;
 
     box-shadow:
-        0 2px 8px rgba(15, 23, 42, 0.08);
+        0 2px 8px
+        rgba(15, 23, 42, 0.08);
 }
 
 
@@ -1268,21 +1267,25 @@ body {
         background 0.2s ease;
 }
 
+
 .auth-resend-button:hover:not(:disabled) {
     color: #1d4ed8;
+
     background: #eff6ff;
 
     border-radius: 8px;
 }
 
+
 .auth-resend-button:disabled {
     opacity: 0.6;
+
     cursor: not-allowed;
 }
 
 
 /* =========================================================
-   MOBILE
+   LOGIN TABS - SMALL MOBILE
 ========================================================= */
 
 @media (max-width: 576px) {
@@ -1291,12 +1294,14 @@ body {
         margin-top: 20px;
     }
 
+
     .auth-login-tab {
         padding: 9px 8px;
+
         font-size: 13px;
     }
-}
 
+}
 
 
 /* ==========================================
@@ -1321,10 +1326,5 @@ body {
     .auth-google-button:hover {
         transform: none;
     }
-
-
-
-
-
 
 }
